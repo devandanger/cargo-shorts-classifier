@@ -7,7 +7,7 @@ data = tc.image_analysis.load_images('./data/PetImages', with_path=True)
 data['label'] = data['path'].apply(lambda path: 'dog' if '/Dog' in path else 'cat')
 
 # Save the data for future use
-data.save('cats-dogs.sframe')
+data.save('./data/_frame/cats-dogs.sframe')
 
 # Explore interactively
 data.explore()
